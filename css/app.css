@@ -8,6 +8,8 @@ html {
     box-sizing: inherit;
 }
 
+
+
 html,
 body {
     width: 100%;
@@ -21,6 +23,10 @@ body {
     font-family: 'Coda', cursive;
 }
 
+p {
+    margin-left: 8px;
+    text-align: center;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -66,9 +72,10 @@ h1 {
 }
 
 .deck .card.open {
-    transform: rotateY(0);
+    transform: rotateY(180);
     background: #02b3e4;
     cursor: default;
+    pointer-events: none;
 }
 
 .deck .card.show {
@@ -79,6 +86,7 @@ h1 {
     cursor: default;
     background: #02ccba;
     font-size: 33px;
+    pointer-events: none;
 }
 
 /*
@@ -86,9 +94,12 @@ h1 {
  */
 
 .score-panel {
-    text-align: left;
-    width: 345px;
+    /*text-align: left;*/
+    max-width: 660px;
+    width: 100%;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .score-panel .stars {
@@ -106,4 +117,46 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+.stopwatch li span {
+    margin: 15px;
+}
+
+.stopwatch li {
+    list-style-type: none;
+}
+
+.close {
+    background-color: #9e9e9e;
+    float: right;
+    margin-right: 5px;
+    margin-top: 0px;
+    padding: 4px;
+    font-size: 1.6em;
+    border-radius: 5px;
+
+}
+
+
+#showModal {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  background-color: #24DAD8FF;
+  min-width: 500px;
+  min-height: 200px;
+  border-radius: 5px;
+}
+
+#button-playagain {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#star-rating li {
+    list-style: none;
+    display: inline-block;
 }

@@ -1,20 +1,19 @@
 # Memory Game Project
 
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+The Memory Game is a project from the Front-End Web Developer Nanodegree Program of Udacity . All students are provided with starter HTML and CSS code. This starter code display a static and non-interactive version of Memory Game project. The goal is to create an interactive game with different functionalities.
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+The game board consist 16 cards. They are combined in 8 pairs with different symbols on one side. The cards are arranged randomly on the grid with the symbol face down. The player flip two cards over to reveal their symbols. If the symbols matched, both cards stay flipped over. If the cards do not match, both cards are flipped face down. As soon as player produces first click a timer starts. At the beginning there are 3 stars. After 16 moves - 2 stars; 34 moves - 1 star; Once all cards have been correctly matched the game ends. A pop up message congratulates the player and shows the total moves, winner time and won stars. The game also have a restart function and when you get the pop up you can select to play again if you want.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Resources:
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+Used resources:
+https://www.w3schools.com/
+https://www.udacity.com/
+https://stackoverflow.com/
+https://developer.mozilla.org/en-US/
 
-## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+Also i want to thank all my great student fellows in Slack channels for helpful comments when i was stuck on some issues.
+The symbols used for the project are from fontawesome.com; Fonts - from fonts.google.com; 
